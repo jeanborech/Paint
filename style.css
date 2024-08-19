@@ -1,0 +1,96 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+
+body {
+background-color: rgb(210, 228, 243);
+}
+
+canvas {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_ferramentas {
+     width: 110px;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+     margin-left: 40px;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-bottom: 20px;
+}
+
+.ferramenta_botao,
+.tamanho_botao {
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.ferramenta_botao >span {
+    font-size: 1.8rem;
+}
+
+.ferramenta_botao:hover, 
+.tamanho_botao:hover {
+    background-color: #f2f2f2;
+}
+
+.input_color {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 7px;
+}
+
+.input_color::-webkit-color-swatch {
+    border-radius: 100px;
+}
+
+.tamanho_botao{
+    padding: 10px;
+    height: auto;
+
+}
+.tamanho_botao >span {
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+    display: block;
+}
+
+.tamanho_botao[data-size="5"] >span {
+    height: 5px;
+}
+.tamanho_botao[data-size="10"] >span {
+    height: 10px;
+}
+.tamanho_botao[data-size="20"] >span {
+    height: 20px;
+}
+.tamanho_botao[data-size="30"] >span {
+    height: 30px;
+}

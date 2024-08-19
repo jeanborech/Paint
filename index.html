@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="
+    https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+
+  <section class="container">
+
+    <canvas width="900" height="600"></canvas>
+
+    <div>
+        <section class="caixa_ferramentas">
+            <button class="ferramenta_botao" data-action="pincel">
+              <span class="material-symbols-outlined">format_paint </span>
+            </button>
+
+              <button class="ferramenta_botao" data-action="borracha">
+                <span class="material-symbols-outlined">ink_eraser </span>
+              </button>
+
+                <button class="ferramenta_botao">
+                 <input type="color" class="input_color">
+                </button>
+        </section>
+
+        <section class="caixa_ferramentas">
+          <button class="tamanho_botao" data-size=5>
+            <span class="tamanho"></span>
+          </button>
+
+          <button class="tamanho_botao" data-size=10>
+            <span class="tamanho"></span>
+          </button>
+
+          <button class="tamanho_botao" data-size=20>
+            <span class="tamanho"></span>
+          </button>
+
+          <button class="tamanho_botao" data-size=30>
+            <span class="tamanho"></span>
+          </button>
+        </section>
+
+        <section class="caixa_ferramentas">
+          <button class="ferramenta_botao ferramenta_limpar">
+            <span class="material-symbols-outlined"> auto_delete </span>
+          </button>
+        </section>
+    
+      </div>
+
+  </section>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
